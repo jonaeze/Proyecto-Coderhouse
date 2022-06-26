@@ -279,6 +279,18 @@ iframe {     max-width: 100%;     height: auto; }
 	"main"
 	"footer";
 }
+.filasColumnas{
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+		text-align: center;
+		grid-template-areas: 
+		"nav"
+		"header"
+		"main"
+		"footer";
+}
 }
 @media only screen and (max-width: 768px) {
 	.div-quienesSomos{
