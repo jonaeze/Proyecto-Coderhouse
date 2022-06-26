@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Madero City - Almacen de bebidas y congelados</title>
+	<link rel="shortcut icon" href="../img/fovicon.jpeg">
+	<!-- mi css -->
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div class="intro">
+		<p class="text-black">Podes realizar tu pedido o contactarte con nosotros por nuestras redes sociales o link de whatsapp</p>
+	</div>
+	<nav>
+		<div class="logop">
+		<a href="../index.html">
+			<img  class="logoprit" src="../img/logo.png" alt="logo de madero city">
+		</a>
+		</div>
+		<div class="text-center flex-direction centrar-img">
+		<ul>
+			<li class="botones"><a href="../views/bebidas.html">Bebidas</a>
+			</li>
+			<li class="botones"><a href="../views/congelados.html">Congelados</a>
+			</li>
+			<li class="botones"><a href="../views/promos.html">Promos</a>
+			</li>
+			<li class="botones"><a href="../views/contacto.html">Contacto</a>
+			</li>
+		</ul>
+		</div>
+	</nav>
+	<header>
+		<h1>Realice su pedido aquí:</h1>
+	</header>
+	<main>
+		<!-- inicia form -->
+		<section>
+			<form action="envio.php">
+				<fieldset>
+					<legend>Info Personal</legend>
+					<label for="name">Nombre y Apellido</label>
+					<input type="text" id="name" placeholder="Ingrese su nombre aquí">
+					<br>
+					<label for="domicilio">Domicilio</label>
+					<input type="text" id="domicilio" placeholder="Dirección Particular">
+					<br>
+					<label for="telefono">Numero de Contacto</label>
+					<input type="text" name="telefono" placeholder="Numero Telefonico">
+				</fieldset>
+				<fieldset>
+					<legend>Info del pedido</legend>
+					<label for="vinos">Vinos</label>
+					<input type="checkbox" id="vinos" value="vinos">
+					<br>
+					<label for="lata">Lata 472 ml</label>
+					<input type="checkbox" id="lata" value="lata">
+					<br>
+					<label for="botella">Botella 1 lt</label>
+					<input type="checkbox" id="botella" value="botella">
+					<br>
+					<label for="papas baston">Papas Baston x800gr</label>
+					<input type="checkbox" id="papas baston" value="papas baston x800gr">
+					<br>
+					<label for="panchos">Promo Panchos</label>
+					<input type="checkbox" id="panchos" value="promo panchos">
+					<br>
+					<label for="hamburguesas">Promo Hamburguesas</label>
+					<input type="checkbox" id="hamburguesas" value="promo hamburguesas">
+				</fieldset>
+				<fieldset>
+					<legend>Info de envio</legend>
+					<label for="local">Retiro en el local</label>
+					<input type="radio" id="local" name="envio" value="local">
+					<br>
+					<label for="domicilio">Envio a domicilio</label>
+					<input type="radio"	id="domicilio" name="envio"value="domicilio">
+					<label for="localidad">Localidad</label>
+					<select name="provincia" id="localidad">
+						<option value="caba">C.A.B.A</option>
+						<option value="bsas">Provincia de Bs.As</option>
+						<option value="interior">Interior del país</option>
+					</select>
+				</fieldset>
+				<label for="mensaje">Comentarios</label>
+				<br>
+				<textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+				<br>
+				<input type="reset" value="Limpiar">
+				<input type="submit" value="Enviar">
+			</form>
+		</section>
+		<!-- ends forms -->
+	</main>
+<footer class="piePagina">
+		<h2 class="text-center">Podes contactarnos a traves de nuestras redes sociales:</h2>
+		<div>
+		<a href="https://www.instagram.com/maderocity_/" target="_blanck">
+			<img class="instagram" src="../img/logoinsta.png" alt="logo instagram" target="_blanck">
+		</a>
+		<a href="https://walink.co/e9e75b" target="_blanck">
+			<img class="whatsapp" src="../img/wsplogo.png" alt="logo whatsapp" target="_blanck">
+		</a>
+		<a href="https://www.facebook.com" target="_blanck">
+			<img class="facebook" src="../img/logofb.png" alt="logo facebook">
+		</a>
+		</div>
+	</footer>
+</body>
+</html>

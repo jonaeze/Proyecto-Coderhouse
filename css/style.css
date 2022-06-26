@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+/*reset*/
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+/*etiquetas*/
+
+html{
+	font-size: 62.5%;
+}
+
+nav ul{
+		list-style-type: none;
+		display: inline-block;
+	}
+
+	nav ul li{
+		list-style: none;
+		display: inline-block;
+		margin: 0 30px;
+	}
+
+		nav ul li a{
+			font-size: 1.7rem;
+			text-decoration: none;
+			display: inline-block;
+			color: #080808;
+			font-family: 'Rock Salt', cursive;
+		}
+
+body{
+	background-image: url(../img/fondo-madera.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+footer{
+	background-image:url(../img/fondo-negro1.png);
+	background-attachment: scroll;
+	background-size: 100%;
+	background-repeat: no-repeat; 
+}
+h1{
+	font-size: 4rem;
+}
+h2{
+	font-size: 2.5rem;
+}
+h3{
+	font-size: 2rem;
+}
+h2
+{
+	color: #090909;
+	font-family: 'Rock Salt', cursive;
+}
+h1
+{
+	color: #FAB102;
+	font-family: 'Rock Salt', cursive;
+}
+h3{
+	color: #090909;
+	font-family: 'Rock Salt', cursive;
+
+}
+p{
+	font-family: 'Spline Sans Mono', monospace;
+	font-size: 2rem;
+	line-height: 2.5rem;
+	color: #F59E38;
+	font-style: italic;
+}
+
+iframe {     max-width: 100%;     height: auto; }
+
+/*clases para los textos*/
+
+.intro{
+	background-color: rgba(247, 176, 6, .5);
+	margin: 10px 10px;
+	padding: 10px;
+	border: groove red 10px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.te-redes{
+	color: #FAB102;
+	font-family: 'Rock Salt', cursive;
+}
+
+.teQuienesSomos{
+	text-align:center;
+}
+
+.text-QuienesSomos{
+	
+	margin: 25px 25px;
+	padding: 15px;
+	border: groove red 10px;
+	border-radius: 10px;
+}
+
+.text-red{
+	color: rgba(205, 58, 58, 1.0);
+}
+
+.text-black{
+	color: black;
+}
+
+/*Botonera*/
+
+.botones{
+	background-color: #AE7A36;
+	margin: 20pxpx 20px;
+	padding: 5px;
+	border: groove red 5px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+/*Ajustes para imagenes*/
+
+.fondo-1{
+	background-color: rgba(247, 165, 59, .8);
+}
+
+.logop{
+	text-align: center;
+}
+
+.logoprit{
+	width: 33%;
+}
+
+.logomap{
+
+	text-align: center;
+	margin: 25px 25px;
+	padding: 0px;
+	background-color:rgba(247, 165, 59, .8);
+	border: groove red 10px;
+	border-radius: 10px;
+}
+
+.frente{
+	text-align: center;
+}
+
+/*Tamaños imagenes*/
+
+.instagram{
+  width: 20%;
+}
+.whatsapp{
+	width: 20%;
+}
+.facebook{
+	width: 20%;
+}
+.localExterior{
+	width: 20%;
+}
+.img-frente{
+	width: 20%;
+}
+
+/*Ajustes para el Footer*/
+
+.piePagina{
+	display: inline-block;
+	margin: 0 30px;
+	text-align: center;
+}
+
+
+/*Flex y box*/
+.box{
+	padding: 0px;
+	text-align: center;
+	border: groove red 10px;
+	border-radius: 10px;
+	margin: 10px 10px;
+}
+.contenedor{
+	display: flex;
+}
+.flex-direction{
+	flex-direction: row;
+}
+.centrar-img{
+	justify-content: space-evenly;
+}
+/*Grid para Bebidas*/
+
+.grid{
+	width: 99% ;
+	display: grid;
+}
+.filasColumnas{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+		text-align: center;
+		grid-template-areas: 
+		"nav nav"
+		"header header"
+		"main main"
+		"footer footer";
+}
+
+.justh{
+	justify-items: center;
+}
+
+.justv{
+	align-items: center;
+}
+.justcont{
+	justify-content: space-between;
+}
+.alingc{
+	align-content: space-between;
+}
+/*Grid y media queries*/
+
+.cuerpo{
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"nav"
+	"header"
+	"main"
+	"footer";
+}
+
+#mainNav{
+	grid-area: nav;
+}
+
+#header{
+	grid-area: header;
+}
+
+#main{
+	grid-area: main;
+	flex-direction: column;
+}
+
+#footer{
+	grid-area: footer;
+}
+
+@media only screen and (max-width: 768px) {
+	.div-quienesSomos{
+
+	width:100%!important;
+}
+
+.div-logoMap{
+	width:100%!important;
+	
+}
+footer{
+	background-attachment: scroll;
+	background-size: 100%;
+	background-repeat: no-repeat; 
+}
+
+}
+@media only screen and (min-width: 992px) {
+.div-quienesSomos{
+
+	width:50%!important;
+}
+.cuerpo{
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"nav"
+	"header"
+	"main"
+	"footer";
+}
+}
+@media only screen and (min-width: 1200px) {
+.cuerpo{
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"nav"
+	"header"
+	"main"
+	"footer";
+}
+}
