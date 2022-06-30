@@ -5,11 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Madero City - Almacen de bebidas y congelados</title>
 	<link rel="shortcut icon" href="img/fovicon.jpeg">
-	<!-- mi css -->
+
+<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<!-- mi css -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="cuerpo">
-	<div class="intro degrade">
+	<div class="intro degradeTrans sticky-top">
 		<p class="text-black">Podes realizar tu pedido o contactarte con nosotros por nuestras redes sociales o link de whatsapp</p>
 	</div>
 	<nav>
@@ -18,7 +22,33 @@
 			<img  class="logoprit" src="img/logo.png" alt="logo de madero city">
 		</a>
 		</div>
-		<div class="text-center flex-direction centrar-img">
+		<!-- Inicio de Navbar -->
+<nav class="navbar navbar-expand-sm  navbar-light">
+  <div class="container-fluid">
+    
+    <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-sm-0">
+        <li class="nav-item">
+          <a class="nav-link text-center degrade text-dark" aria-current="page" href="views/bebidas.html">Bebidas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-center degrade text-dark" href="views/congelados.html">Congelados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-center degrade text-dark" href="views/pedidos.html">Pedidos</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+		<!-- <div class="text-center flex-direction centrar-img">
 		<ul>
 			<li class="botones rotate degrade"><a href="views/bebidas.html">Bebidas</a>
 			</li>
@@ -29,20 +59,52 @@
 			<li class="botones rotate degrade"><a href="views/contacto.html">Contacto</a>
 			</li>
 		</ul>
-		</div>
+		</div> -->
 	</nav>
+<!-- Inicio carrusel -->
 	<header>
 		<div class="frente">
 		<h1 class="text-center">Donde nunca puede faltarte una bien fría</h1>
 		</div>
-			<div class="contenedor flex-direction centrar-img">
+<div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel"data-interval="1000">
+  <div class="carousel-inner ">
+    <div class="carousel-item active ">
+      <img src="img/interior1.jpeg" class="d-block img-frente mx-auto box " alt="foto del local adentro">
+    </div>
+    <div class="carousel-item">
+      <img src="img/localfrente2.jpeg" class="d-block img-frente mx-auto box" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/localexterior.jpg" class="d-block img-frente mx-auto box " alt="...">
+    </div>
+  </div>
+</div>
+			<!-- <div class="contenedor flex-direction centrar-img">
 		<img class="img-frente box" src="img/localfrente2.jpeg" alt="frente del local madero city">
 		<img class="img-frente box" src="img/interior1.jpeg" alt="interior del local">
 		<img class="localExterior box" src="img/local-afuera.png" alt="exterior del local">
-			</div>
+			</div> -->
 	</header>
 <main>
-	<div>
+<div class="container">
+	<div class="row">
+  <div class="col div-quienesSomos ">
+            <article class="degrade text-center text-QuienesSomos">
+                <h2 class="teQuienesSomos">Quienes Somos:</h2>
+            <p class="text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur earum porro saepe nesciunt cupiditate adipisci nemo cumque est quaerat ipsum sit culpa, laborum eos totam, accusantium eum omnis impedit facere.</p>
+           <p class="text-black">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Commodi.</p>
+            </article>
+        </div>
+    <div class="col div-logoMap">
+            <div class="logomap degrade">
+            	<h3 class="text-center">Nos encontramos ubicados en:</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.2051232759932!2d-58.50390697074501!3d-34.68447969598935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc928d6af061f%3A0x2beeb756e6ee8a6a!2sMariquita%20Thompson%20805%2C%20B1768BCE%20Villa%20Madero%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1653419342479!5m2!1ses!2sar" width="99%" height="325px" style="" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+  </div>
+</div>
+
+	<!-- <div>
         <div class="div-quienesSomos" style="float:left;width:50%;">
             <article class="degrade text-center text-QuienesSomos">
                 <h2 class="teQuienesSomos">Quienes Somos:</h2>
@@ -56,10 +118,31 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.2051232759932!2d-58.50390697074501!3d-34.68447969598935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc928d6af061f%3A0x2beeb756e6ee8a6a!2sMariquita%20Thompson%20805%2C%20B1768BCE%20Villa%20Madero%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1653419342479!5m2!1ses!2sar" width="99%" height="325px" style="" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-    </div>
+    </div> -->
 	</main>
-	<footer class="piePagina">
-		<h2 class="text-center te-redes">Podes contactarnos a traves de nuestras redes sociales:</h2>
+	<footer class="piePagina mt-5">
+		<h2> Podes contactarnos a traves de nuestras redes sociales:</h2>
+<div class="row">
+    <div class="col-12 col-md-4">
+    	<a href="https://www.instagram.com/maderocity_/" target="_blanck">
+			<img class="instagram" src="img/logoinsta.png" alt="logo instagram" target="_blanck">
+		</a></div>
+    <div class="col-12 col-md-4">
+    	<a href="https://walink.co/e9e75b" target="_blanck">
+			<img class="whatsapp" src="img/wsplogo.png" alt="logo whatsapp" target="_blanck">
+		</a></div>
+    <div class="col-12 col-md-4">
+    	<a href="https://www.facebook.com" target="_blanck">
+			<img class="facebook" src="img/logofb.png" alt="logo facebook">
+		</a></div>
+ </div>
+
+
+
+
+
+
+		<!-- h2 class="text-center te-redes">Podes contactarnos a traves de nuestras redes sociales:</h2>
 		<div>
 		<a href="https://www.instagram.com/maderocity_/" target="_blanck">
 			<img class="instagram" src="img/logoinsta.png" alt="logo instagram" target="_blanck">
@@ -70,7 +153,11 @@
 		<a href="https://www.facebook.com" target="_blanck">
 			<img class="facebook" src="img/logofb.png" alt="logo facebook">
 		</a>
-		</div>
+		</div> -->
 	</footer>
+
+<!--  Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
