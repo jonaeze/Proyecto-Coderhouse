@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+$fontprimary: 'Rock Salt', cursive;
+$fontsecundary:'Spline Sans Mono', monospace;
+$fontthird:'Spline Sans Mono', monospace;
+
+$tamañoXl:4rem;
+$tamañoX:2.5rem;
+$tamañoL:2rem;
+$tamañoM:1.7rem;
+
+h1{
+	font-size: $tamañoXl;
+}
+h2{
+	font-size:$tamañoX;
+}
+h3{
+	font-size: $tamañoL;
+}
+p{
+	font-family: $fontthird;
+	font-size: $tamañoL;
+	line-height: 2.5rem;
+	color: $negro;
+	font-style: italic;
+}
+h1
+{
+	background: rgb(251,1,1);
+	background: linear-gradient(to top, rgba(251,1,1,1) 34%, rgba(0,0,0,1) 55%);
+	font-family: $fontprimary;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+h3{
+	color: $negro;
+	font-family: $fontprimary;
+}
+h2
+{
+	color: $negro;
+	font-family: $fontprimary;
+}
+/*clases para los textos*/
+.intro{
+	margin: 10px 10px;
+	padding: 10px;
+	border: groove $negro 3px;
+	border-radius: 10px;
+	text-align: center;
+}
+.text-center{
+	text-align: center;
+}
+.te-redes{
+	color: $lightOrange;
+	font-family: $fontprimary;
+}
+.teQuienesSomos{
+	text-align:center;
+}
+.text-listaBe{
+	margin: 30px 30px;
+	padding: auto;
+}
+.text-QuienesSomos{
+	margin: 25px 35px;
+	padding: 15px;
+	border: groove $negro 6px;
+	border-radius: 10px;
+}
+.text-red{
+	color: $rojo;
+}
+.text-black{
+	color: $negro;
+}

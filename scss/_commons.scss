@@ -1,0 +1,154 @@
+
+/*Tamaños imagenes*/
+.instagram{
+  width: 20%;
+}
+.whatsapp{
+	width: 20%;
+}
+.facebook{
+	width: 20%;
+}
+.localExterior{
+	width: 30%;
+}
+.img-frente{
+	width: 20%;
+}
+
+.img-frente2{
+	width: 33%;
+}
+/*Flex y box*/
+.box{
+	padding: 0px;
+	text-align: center;
+	border: groove $negro 6px;
+	border-radius: 10px;
+	margin: 10px 10px;
+}
+.boxB{
+	padding: 0px;
+	text-align: center;
+	border: groove $negro 3px;
+	border-radius: 10px;
+	margin: 20px 20px;
+}
+.boxF{
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+	margin: 20px 20px;
+}
+.contenedor{
+	display: flex;
+}
+.flex-direction{
+	flex-direction: row;
+}
+.centrar-img{
+	justify-content: space-evenly;
+}
+/*Grid para Bebidas*/
+
+.grid{
+	width: 99% ;
+	display: grid;
+}
+.filasColumnas{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+		text-align: center;
+		grid-template-areas: 
+		"nav nav"
+		"header header"
+		"main main"
+		"footer footer";
+}
+/*Grid y media queries*/
+.cuerpo{
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"nav"
+	"header"
+	"main"
+	"footer";
+}
+#mainNav{
+	grid-area: nav;
+}
+#header{
+	grid-area: header;
+}
+#body{
+	grid-area: cuerpo;
+}
+#main{
+	grid-area: main;
+	flex-direction: column;
+}
+#footer{
+	grid-area: footer;
+}
+@media only screen and (max-width: 576px){
+	.cuerpoBe{
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"nav"
+	"header"
+	"cuerpo"
+	"main"
+	"footer";
+}
+.filasColumnas{
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+		text-align: center;
+		grid-template-areas: 
+		"nav"
+		"header"
+		"cuerpo"
+		"main"
+		"footer";
+}
+}
+@media only screen and (max-width: 768px) {
+	.div-quienesSomos{
+	width:100%!important;
+}
+.div-logoMap{
+	width:100%!important;
+}
+footer{
+	background-attachment: scroll;
+	background-size: 100%;
+	background-repeat: no-repeat; 
+}
+}
+@media only screen and (min-width: 992px) {
+.div-quienesSomos{
+	width:50%!important;
+}
+
+}
+@media only screen and (min-width: 1200px) {
+.cuerpo{
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"nav"
+	"header"
+	"cuerpo"
+	"main"
+	"footer";
+}
+}

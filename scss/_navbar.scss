@@ -1,0 +1,47 @@
+/*Ajustes para imagenes*/
+.fondo-1{
+	background-color: $beigeSecundary;
+}
+.logop{
+	text-align: center;
+}
+.logoprit{
+	width: 33%;
+}
+.logomap{
+	text-align: center;
+	margin: 25px 25px;
+	padding: 0px;
+	background-color:$beigeSecundary;
+	border: groove $negro 6px;
+	border-radius: 10px;
+}
+.frente{
+	text-align: center;
+}
+/*etiquetas*/
+nav ul{
+		list-style-type: none;
+		display: inline-block;
+		li{
+			list-style: none;
+			display: inline-block;
+			margin: 0 30px;
+			a{
+				font-size: $tamañoM;
+				text-decoration: none;
+				display: inline-block;
+				color: $negro;
+				font-family:$fontprimary;
+			}
+		}
+}
+/*Botonera*/
+.botones{
+	background-color: $beige;
+	margin: 20px 20px;
+	padding: 5px;
+	border: groove $negro 3px;
+	border-radius: 10px;
+	text-align: center;
+}
