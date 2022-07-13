@@ -43,13 +43,6 @@ h2
 	font-family: $fontprimary;
 }
 /*clases para los textos*/
-.intro{
-	margin: 10px 10px;
-	padding: 10px;
-	border: groove $negro 3px;
-	border-radius: 10px;
-	text-align: center;
-}
 .text-center{
 	text-align: center;
 }
@@ -64,15 +57,25 @@ h2
 	margin: 30px 30px;
 	padding: auto;
 }
-.text-QuienesSomos{
-	margin: 25px 35px;
-	padding: 15px;
-	border: groove $negro 6px;
-	border-radius: 10px;
-}
+
 .text-red{
-	color: $rojo;
+	 	color: $rojo;
 }
 .text-black{
 	color: $negro;
 }
+//extend
+.intro{
+	margin: 10px 10px;
+	padding: 10px;
+	border: groove $negro 3px;
+	border-radius: 10px;
+	text-align: center;
+}
+.text-QuienesSomos{
+	@extend .intro;
+		margin: 25px 35px;
+		padding: 15px;
+		border: groove $negro 6px;		
+}
+

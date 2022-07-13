@@ -20,25 +20,23 @@
 	width: 33%;
 }
 /*Flex y box*/
+
+//maxin
+@mixin cajas($padding,$margin,$text-align,$borde,$borde-radio){
+	padding:$padding;
+	margin: $margin;
+	text-align: $text-align;
+	border:$borde;
+	border-radius:$borde-radio;
+}
 .box{
-	padding: 0px;
-	text-align: center;
-	border: groove $negro 6px;
-	border-radius: 10px;
-	margin: 10px 10px;
+	@include cajas(0px,10px 10px,center,groove $negro 6px,10px)
 }
 .boxB{
-	padding: 0px;
-	text-align: center;
-	border: groove $negro 3px;
-	border-radius: 10px;
-	margin: 20px 20px;
+	@include cajas(0px,20px 20px,center,groove $negro 3px,10px)
 }
 .boxF{
-	padding: 10px;
-	text-align: center;
-	border-radius: 10px;
-	margin: 20px 20px;
+	@include cajas(10px,20px 20px,center,none,10px)
 }
 .contenedor{
 	display: flex;

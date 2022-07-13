@@ -93,13 +93,6 @@ h2 {
   font-family: "Rock Salt", cursive; }
 
 /*clases para los textos*/
-.intro {
-  margin: 10px 10px;
-  padding: 10px;
-  border: groove #090909 3px;
-  border-radius: 10px;
-  text-align: center; }
-
 .text-center {
   text-align: center; }
 
@@ -114,17 +107,23 @@ h2 {
   margin: 30px 30px;
   padding: auto; }
 
-.text-QuienesSomos {
-  margin: 25px 35px;
-  padding: 15px;
-  border: groove #090909 6px;
-  border-radius: 10px; }
-
 .text-red {
   color: #cd3a3a; }
 
 .text-black {
   color: #090909; }
+
+.intro, .text-QuienesSomos {
+  margin: 10px 10px;
+  padding: 10px;
+  border: groove #090909 3px;
+  border-radius: 10px;
+  text-align: center; }
+
+.text-QuienesSomos {
+  margin: 25px 35px;
+  padding: 15px;
+  border: groove #090909 6px; }
 
 /*Ajustes para imagenes*/
 .fondo-1 {
@@ -135,7 +134,7 @@ h2 {
 
 .logoprit {
   width: 33%; }
-
+S
 .logomap {
   text-align: center;
   margin: 25px 25px;
@@ -193,23 +192,24 @@ nav ul {
 /*Flex y box*/
 .box {
   padding: 0px;
+  margin: 10px 10px;
   text-align: center;
   border: groove #090909 6px;
-  border-radius: 10px;
-  margin: 10px 10px; }
+  border-radius: 10px; }
 
 .boxB {
   padding: 0px;
+  margin: 20px 20px;
   text-align: center;
   border: groove #090909 3px;
-  border-radius: 10px;
-  margin: 20px 20px; }
+  border-radius: 10px; }
 
 .boxF {
   padding: 10px;
+  margin: 20px 20px;
   text-align: center;
-  border-radius: 10px;
-  margin: 20px 20px; }
+  border: none;
+  border-radius: 10px; }
 
 .contenedor {
   display: flex; }
@@ -231,14 +231,20 @@ nav ul {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   text-align: center;
-  grid-template-areas: "nav nav" "header header" "main main" "footer footer"; }
+  grid-template-areas: "nav nav"
+ "header header"
+ "main main"
+ "footer footer"; }
 
 /*Grid y media queries*/
 .cuerpo {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "nav" "header" "main" "footer"; }
+  grid-template-areas: "nav"
+ "header"
+ "main"
+ "footer"; }
 
 #mainNav {
   grid-area: nav; }
@@ -261,14 +267,22 @@ nav ul {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "nav" "header" "cuerpo" "main" "footer"; }
+    grid-template-areas: "nav"
+ "header"
+ "cuerpo"
+ "main"
+ "footer"; }
   .filasColumnas {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     text-align: center;
-    grid-template-areas: "nav" "header" "cuerpo" "main" "footer"; } }
+    grid-template-areas: "nav"
+ "header"
+ "cuerpo"
+ "main"
+ "footer"; } }
 
 @media only screen and (max-width: 768px) {
   .div-quienesSomos {
@@ -289,7 +303,11 @@ nav ul {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "nav" "header" "cuerpo" "main" "footer"; } }
+    grid-template-areas: "nav"
+ "header"
+ "cuerpo"
+ "main"
+ "footer"; } }
 
 /*Ajustes para el Footer*/
 .piePagina {
