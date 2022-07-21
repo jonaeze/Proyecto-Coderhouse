@@ -47,66 +47,64 @@
   </div>
 </nav>
 	<header>
-		<h1>Realice su pedido aquí:</h1>
+		<h1 class="text-center mt-3 mb-3">Realiza tu pedido Aquí</h1>
 	</header>
 	<main>
-		<!-- inicia form -->
-		<section>
-			<form action="envio.php">
-				<fieldset>
-					<legend>Info Personal</legend>
-					<label for="name">Nombre y Apellido</label>
-					<input type="text" id="name" placeholder="Ingrese su nombre aquí">
-					<br>
-					<label for="domicilio">Domicilio</label>
-					<input type="text" id="domicilio" placeholder="Dirección Particular">
-					<br>
-					<label for="telefono">Numero de Contacto</label>
-					<input type="text" name="telefono" placeholder="Numero Telefonico">
-				</fieldset>
-				<fieldset>
-					<legend>Info del pedido</legend>
-					<label for="vinos">Vinos</label>
-					<input type="checkbox" id="vinos" value="vinos">
-					<br>
-					<label for="lata">Lata 472 ml</label>
-					<input type="checkbox" id="lata" value="lata">
-					<br>
-					<label for="botella">Botella 1 lt</label>
-					<input type="checkbox" id="botella" value="botella">
-					<br>
-					<label for="papas baston">Papas Baston x800gr</label>
-					<input type="checkbox" id="papas baston" value="papas baston x800gr">
-					<br>
-					<label for="panchos">Promo Panchos</label>
-					<input type="checkbox" id="panchos" value="promo panchos">
-					<br>
-					<label for="hamburguesas">Promo Hamburguesas</label>
-					<input type="checkbox" id="hamburguesas" value="promo hamburguesas">
-				</fieldset>
-				<fieldset>
-					<legend>Info de envio</legend>
-					<label for="local">Retiro en el local</label>
-					<input type="radio" id="local" name="envio" value="local">
-					<br>
-					<label for="domicilio">Envio a domicilio</label>
-					<input type="radio"	id="domicilio" name="envio"value="domicilio">
-					<label for="localidad">Localidad</label>
-					<select name="provincia" id="localidad">
-						<option value="caba">C.A.B.A</option>
-						<option value="bsas">Provincia de Bs.As</option>
-						<option value="interior">Interior del país</option>
-					</select>
-				</fieldset>
-				<label for="mensaje">Comentarios</label>
-				<br>
-				<textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
-				<br>
-				<input type="reset" value="Limpiar">
-				<input type="submit" value="Enviar">
-			</form>
-		</section>
-		<!-- ends forms -->
+<!-- inicia form -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form class="form-horizontal" method="post">
+                    <fieldset>
+                        <legend class="text-left text-black fs-2">Completar</legend>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-6">
+                                <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-6">
+                                <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                            <div class="col-md-6">
+                                <input id="email" name="email" type="text" placeholder="Email de contacto" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                            <div class="col-md-6">
+                                <input id="phone" name="phone" type="text" placeholder="Numero de telefono de contacto" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                            <div class="col-md-6">
+                                <textarea class="form-control" id="message" name="message" placeholder="Ingrese los productos que desea llevar" rows="7"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12 text-left">
+                                <button type="submit" class="btn degrade fs-3 text-black">Enviar</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ends forms -->
 	</main>
 <!-- Inicio de pie de pagina -->
 <footer class="piePagina mt-5">
